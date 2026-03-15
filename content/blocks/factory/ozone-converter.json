@@ -1,0 +1,81 @@
+{
+    "type": "GenericCrafter",
+    "name": "block.termoatom-ozone-converter.name",
+    "description": "block.termoatom-ozone-converter.description",
+
+    "planet": "erekir",
+    "category": "crafting",
+    "buildVisibility": "shown",
+    "alwaysUnlocked": false
+    "size": 4,
+    "health": 1600,
+
+    "requirements": [
+        "beryllium/300",
+        "silicon/200",
+        "carbide/150",
+        "oxide/80"
+    ],
+
+    "hasPower": true,
+    "hasLiquids": true,
+    "hasItems": true,
+
+    "liquidCapacity": 60,
+    "itemCapacity": 60,
+
+    "craftTime": 100,
+
+    "consumes": {
+        "power": 7,
+        "items": {
+            "items": [
+                "graphite/3"
+            ]
+        },
+        "liquid": {
+            "liquid": "helium",
+            "amount": 0.25
+        }
+    },
+
+    "outputLiquid": {
+        "liquid": "ozone",
+        "amount": 0.334
+    },
+
+    "drawer": {
+        "type": "drawMulti",
+        "drawers": [
+            {
+                "type": "drawRegion",
+                "suffix": "-bottom"
+            },
+            {
+                "type": "drawRegion",
+                "suffix": ""
+            },
+            {
+                "type": "drawGlowRegion",
+                "suffix": "-glow",
+                "color": "ffb6c1 ",
+                "alpha": 0.8
+            }
+        ]
+    },
+
+    "category": "crafting",
+    "buildVisibility": "shown",
+    "deconstructable": true,
+
+    "research": {
+        "parent": "beryllium-bombardment-chamber",
+        "requirements": [
+            "beryllium/600",
+            "silicon/500",
+            "carbide/400",
+            "oxide/200"
+        ],
+        "planet": "erekir"
+    }
+}

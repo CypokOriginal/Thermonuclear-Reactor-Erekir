@@ -1,0 +1,95 @@
+{
+    "type": "ConsumeGenerator",
+    "name": "block.termoatom-thorium-chaos-reactor.name",
+    "description": "block.termoatom-thorium-chaos-reactor.description",
+
+    "planet": "erekir",
+    "size": 4,
+    "health": 2500,
+
+    "requirements": [
+        "beryllium/400",
+        "silicon/350",
+        "carbide/300",
+        "oxide/150",
+        "thorium/250",
+        "surge-alloy/120"
+    ],
+
+    "hasPower": true,
+    "outputsPower": true,
+    "consumesPower": true,
+    "hasLiquids": true,
+    "hasItems": true,
+
+    "liquidCapacity": 162,
+    "itemCapacity": 30,
+
+    "powerProduction": 84,
+
+    "heatOutput": 1.2,
+    "maxHeat": 1.5,
+
+    "consumes": {
+        "power": 52,
+        "items": {
+            "items": ["thorium/6"]
+        },
+        "liquid": {
+            "liquid": "hydrogen",
+            "amount": 0.5
+        }
+    },
+
+    "outputLiquid": "slag/1.35", 
+
+ 
+    "explodeOnOverheat": true,
+    "overheatScale": 1.0,
+    "explosionRadius": 250,
+    "explosionDamage": 2000,
+    "explodeEffect": "massiveExplosion",
+    "idleSound": "reactor",
+    "idleSoundVolume": 0.9,
+    "ambientSound": "hum",
+    "ambientSoundVolume": 0.5,
+    "explodeSound": "explosion"
+    
+    "warmupSpeed": 0.002,
+    "drawer": {
+        "type": "drawMulti",
+        "drawers": [
+            {
+                "type": "drawRegion",
+                "suffix": "-bottom"
+            },
+            {
+                "type": "drawRegion",
+                "suffix": ""
+            },
+            {
+                "type": "drawGlowRegion",
+                "suffix": "-glow",
+                "color": "ffaa66",
+                "alpha": 1.0,
+            },
+        ]
+    },
+
+    "category": "power",
+    "buildVisibility": "shown",
+    "deconstructable": true,
+
+    "research": {
+        "parent": "magnum-ignis-reactor",
+        "requirements": [
+            "beryllium/800",
+            "silicon/700",
+            "carbide/600",
+            "oxide/300",
+            "thorium/500",
+            "surge-alloy/250"
+        ],
+        "planet": "erekir"
+    }
+}

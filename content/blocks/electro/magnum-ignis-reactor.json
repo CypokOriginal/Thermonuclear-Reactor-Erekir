@@ -1,0 +1,88 @@
+{
+    "type": "ImpactReactor",
+    "name": "block.termoatom-magnum-ignis-reactor.name",
+    "description": "block.termoatom-magnum-ignis-reactor.description",
+
+    "planet": "erekir",
+    "size": 7,
+    "health": 5,
+
+    "hasPower": true,
+    "hasLiquids": true,
+    "liquidCapacity": 40,
+    "itemCapacity": 0,
+
+    "powerProduction": 1200,
+    "consumesPower": true,
+    "outputsPower": true,
+
+    "consumes": {
+        "power": 240,
+        "liquid": {
+            "liquid": "hydrogen",
+            "amount": 2
+        }
+    },
+
+    "warmupSpeed": 0.0015,
+    "explodeOnOverheat": true,
+    "explosionRadius": 3000,
+    "explosionDamage": 35000,
+    "explodeEffect": "massiveExplosion",
+    "explodeSound": "explosion"
+
+
+    "drawer": {
+        "type": "drawMulti",
+        "drawers": [
+            {
+                "type": "drawRegion",
+                "suffix": ""
+            },
+            {
+                "type": "drawGlowRegion",
+                "suffix": "-glow",
+                "color": "ffaa66",
+                "alpha": 1,
+            },
+            {
+                "type": "drawGlowRegion",
+                "suffix": "-glow2",
+                "color": "ff0000",
+                "alpha": 0.8,
+            }
+        ]
+    },
+
+
+    "idleSound": "hum",
+    "idleSoundVolume": 0.6,
+    "ambientSound": "reactor",
+    "ambientSoundVolume": 0.2,
+
+    "requirements": [
+        "beryllium/12000",
+        "silicon/10000",
+        "carbide/8000",
+        "oxide/5000",
+        "tungsten/4000",
+        "surge-alloy/8000"
+    ],
+
+    "category": "power",
+    "buildVisibility": "shown",
+    "deconstructable": true,
+
+    "research": {
+        "parent": "nitrogen-bombardment-chamber",
+        "requirements": [
+            "beryllium/3000",
+            "silicon/2500",
+            "carbide/2000",
+            "oxide/1000",
+            "tungsten/800",
+            "surge-alloy/400"
+        ],
+        "planet": "erekir"
+    }
+}

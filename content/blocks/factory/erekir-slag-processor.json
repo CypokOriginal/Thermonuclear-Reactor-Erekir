@@ -1,0 +1,86 @@
+{
+    "type": "GenericCrafter",
+    "name": "block.termoatom-erekir-slag-processor.name",
+    "description": "block.termoatom-erekir-slag-processor.description",
+
+    "planet": "erekir",
+    "size": 3,
+    "health": 800,
+
+    "requirements": [
+        "beryllium/200",
+        "silicon/150",
+        "carbide/100",
+        "oxide/50",
+        "tungsten/80"
+    ],
+
+    "hasPower": true,
+    "hasLiquids": true,
+    "hasItems": true,
+
+    "liquidCapacity": 640,
+    "itemCapacity": 60,
+
+    "craftTime": 360,
+
+    "consumes": {
+        "power": 8,
+        "liquid": {
+            "liquid": "slag",
+            "amount": 10.66667
+        }
+    },
+
+    "outputItems": [
+        {
+            "item": "tungsten",
+            "amount": 11,
+            "probability": 0.7
+        },
+        {
+            "item": "carbide",
+            "amount": 7,
+            "probability": 0.5
+        },
+        {
+            "item": "beryllium",
+            "amount": 12,
+            "probability": 0.6
+        },
+        {
+            "item": "surge-alloy",
+            "amount": 1,
+            "probability": 0.1
+        }
+    ],
+
+    "drawer": {
+        "type": "drawMulti",
+        "drawers": [
+            {"type": "drawRegion", "suffix": ""},
+            {
+                "type": "drawGlowRegion",
+                "suffix": "-glow",
+                "color": "ff6600",
+                "alpha": 0.4
+            }
+        ]
+    },
+
+    "category": "crafting",
+    "buildVisibility": "shown",
+    "deconstructable": true,
+
+    "research": {
+        "parent": "thorium-chaos-reactor",
+        "requirements": [
+            "beryllium/500",
+            "silicon/400",
+            "carbide/300",
+            "oxide/150",
+            "tungsten/200"
+        ],
+        "planet": "erekir"
+    }
+}

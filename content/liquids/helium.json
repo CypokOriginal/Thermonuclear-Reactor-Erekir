@@ -1,0 +1,38 @@
+{
+
+    "type": "liquid",
+
+    "name": "liquid.termoatom-helium.name",
+
+    "description": "liquid.termoatom-helium.description",
+
+
+    "color": "fff5b0",
+
+
+    "gas": true,
+
+
+    "coolant": true, 
+
+    "viscosity": 0.5, 
+    "flammability": 0,
+    "explosiveness": 0, 
+    "heatCapacity": 0.5,
+
+
+    "effect": "none",
+
+
+    "barColor": "fff5b0",
+     "research": {
+     "parent": "cyanogen",
+     "requirements": [
+         "beryllium/300",
+         "silicon/200",
+         "carbide/100"
+        ],
+        "planet": "erekir"
+    }
+    "barRounded": false 
+}
