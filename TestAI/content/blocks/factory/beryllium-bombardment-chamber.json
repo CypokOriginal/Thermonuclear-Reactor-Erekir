@@ -1,0 +1,71 @@
+{
+    "type": "GenericCrafter",
+    "name": "block.termoatom-beryllium-bombardment-chamber.name",
+    "description": "block.termoatom-beryllium-bombardment-chamber.description",
+
+    "planet": "erekir",
+    "size": 4,
+    "health": 1500,
+
+    "requirements": [
+        "beryllium/400",
+        "silicon/500",
+        "carbide/200",
+        "oxide/120"
+    ],
+
+    "hasPower": true,
+    "hasLiquids": true,
+    "hasItems": true,
+
+    "liquidCapacity": 60,
+    "itemCapacity": 60,
+
+    "craftTime": 90,
+
+    "consumes": {
+        "power": 10,
+        "items": {
+            "items": [
+                "beryllium/3"
+            ]
+        },
+        "liquid": {
+            "liquid": "helium",
+            "amount": 0.5
+        }
+    },
+
+    "outputItems": [
+        "graphite/3"
+    ],
+
+    "drawer": {
+        "type": "drawMulti",
+        "drawers": [
+            {
+                "type": "drawRegion",
+                "suffix": "-bottom"
+            },
+            {
+                "type": "drawRegion",
+                "suffix": ""
+            },
+        ]
+    },
+
+    "category": "crafting",
+    "buildVisibility": "shown",
+    "deconstructable": true,
+
+    "research": {
+        "parent": "helium-extractor",
+        "requirements": [
+            "beryllium/5000",
+            "silicon/4000",
+            "carbide/3000",
+            "oxide/1500"
+        ],
+        "planet": "erekir"
+    }
+}

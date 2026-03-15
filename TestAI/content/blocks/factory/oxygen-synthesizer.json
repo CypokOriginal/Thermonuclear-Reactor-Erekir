@@ -1,0 +1,74 @@
+{
+    "type": "GenericCrafter",
+    "name": "block.termoatom-oxygen-synthesizer.name",
+    "description": "block.termoatom-oxygen-synthesizer.description",
+
+    "planet": "erekir",
+    "size": 3,
+    "health": 550,
+
+    "requirements": [
+        "beryllium/120",
+        "silicon/100",
+        "carbide/80",
+        "oxide/40"
+    ],
+
+    "hasPower": true,
+    "hasLiquids": true,
+    "hasItems": false,
+
+    "liquidCapacity": 50,
+
+    "rotate": true,
+    "liquidOutputDirections": [0],
+
+    "craftTime": 50,
+
+    "consumes": {
+        "power": 4,
+        "liquids": [
+            {
+                "liquid": "nitrogen",
+                "amount": 0.2
+            },
+            {
+                "liquid": "hydrogen",
+                "amount": 0.1
+            }
+        ]
+    },
+
+    "outputLiquid": {
+        "liquid": "ozone",
+        "amount": 0.25
+    },
+
+    "drawer": {
+        "type": "drawMulti",
+        "drawers": [
+            {"type": "drawRegion", "suffix": ""},
+            {
+                "type": "drawGlowRegion",
+                "suffix": "-glow",
+                "color": "88ddff",
+                "alpha": 0.8
+            }
+        ]
+    },
+
+    "category": "crafting",
+    "buildVisibility": "shown",
+    "deconstructable": true,
+
+    "research": {
+        "parent": "nitrogen-converter",
+        "requirements": [
+            "beryllium/300",
+            "silicon/250",
+            "carbide/200",
+            "oxide/100"
+        ],
+        "planet": "erekir"
+    }
+}
