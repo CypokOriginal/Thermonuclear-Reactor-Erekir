@@ -29,7 +29,7 @@
         }
     },
 
-    "pumpAmount": 9,
+    "pumpAmount": 18,
     "warmupSpeed": 0.02,
     "pumpColor": "80c0ff",
 
