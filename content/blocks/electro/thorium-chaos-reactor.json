@@ -25,7 +25,7 @@
     "liquidCapacity": 162,
     "itemCapacity": 30,
 
-    "powerProduction": 168,
+    "powerProduction": 128,
 
     "heatOutput": 1.2,
     "maxHeat": 1.5,
