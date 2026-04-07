@@ -1,0 +1,64 @@
+{
+    "type": "Pump",
+    "name": "block.termoatom-helium-giant-pump.name",
+    "description": "block.termoatom-helium-giant-pump.description",
+
+    "planet": "erekir",
+    "size": 4,
+    "health": 1200,
+
+    "hasPower": true,
+    "hasLiquids": true,
+    "liquidCapacity": 1200,
+
+    "requirements": [
+        "beryllium/250",
+        "silicon/200",
+        "carbide/150",
+        "oxide/80",
+        "tungsten/100"
+    ],
+
+    "consumes": {
+        "power": 6,
+        "liquid": {
+            "liquid": "helium",
+            "amount": 144,
+            "booster": true,
+            "optional": false
+        }
+    },
+
+    "pumpAmount": 9,
+    "warmupSpeed": 0.02,
+    "pumpColor": "80c0ff",
+
+    "drawer": {
+        "type": "drawMulti",
+        "drawers": [
+            { "type": "drawRegion", "suffix": "" },
+            {
+                "type": "drawGlowRegion",
+                "suffix": "-glow",
+                "color": "80c0ff",
+                "alpha": 0.75
+            }
+        ]
+    },
+
+    "category": "liquid", 
+    "buildVisibility": "shown",
+    "deconstructable": true,
+
+    "research": {
+        "parent": "termoatom-helium-eruption-drill",
+        "requirements": [
+            "beryllium/600",
+            "silicon/500",
+            "carbide/400",
+            "oxide/200",
+            "tungsten/250"
+        ],
+        "planet": "erekir"
+    }
+}
