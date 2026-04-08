@@ -21,7 +21,7 @@
       
         "items": {
             "items": [
-                "beryllium/4"  
+                "beryllium/6"  
             ]
         }
     },
@@ -29,7 +29,7 @@
   
     "hasLiquids": true,
     "liquidCapacity": 60,
-    "outputLiquid": "helium/4", 
+    "outputLiquid": "helium/8", 
     
     "craftTime": 90,  
     
