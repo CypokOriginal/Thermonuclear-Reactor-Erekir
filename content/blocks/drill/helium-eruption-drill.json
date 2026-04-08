@@ -10,20 +10,20 @@
     "health": 2000,
 
     "tier": 6,
-    "drillTime": 120,
-    "rotateSpeed": 0.06,
-    "liquidBoostIntensity": 1.8,
+    "drillTime": 12000,
+    "rotateSpeed": 6,
+    "liquidBoostIntensity": 18,
 
     "hasPower": true,
     "hasLiquids": true,
-    "liquidCapacity": 40,
+    "liquidCapacity": 120,
     "itemCapacity": 60,
 
     "consumes": {
-        "power": 5,
+        "power": 7,
         "liquid": {
             "liquid": "helium",
-            "amount": 0.6,
+            "amount": 2,
             "booster": true,
             "optional": true
         }
@@ -34,6 +34,7 @@
         "silicon/600",
         "carbide/200",
         "oxide/150"
+        "surge-alloy/400"
     ],
 
     "category": "production",
@@ -43,6 +44,7 @@
     "research": {
     "parent": "eruption-drill",
     "requirements": [
+        "surge-alloy/400"
         "beryllium/500",
         "silicon/400",
         "carbide/300",
