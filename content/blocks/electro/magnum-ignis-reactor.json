@@ -5,11 +5,11 @@
 
     "planet": "erekir",
     "size": 7,
-    "health": 5,
+    "health": 1,
 
     "hasPower": true,
     "hasLiquids": true,
-    "liquidCapacity": 40,
+    "liquidCapacity": 480,
     "itemCapacity": 0,
 
     "powerProduction": 1200,
@@ -20,7 +20,7 @@
         "power": 240,
         "liquid": {
             "liquid": "hydrogen",
-            "amount": 2
+            "amount": 2.1
         }
     },
 
