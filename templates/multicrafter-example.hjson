@@ -1,0 +1,82 @@
+#=====================================================================================================#
+# ШАБЛОН блока с несколькими рецептами (библиотека MultiCrafter, JojoFR1/MultiCrafter, v1.5.3+).
+#
+# Пока файл лежит в папке templates/, игра его НЕ загружает: она читает только content/.
+# Как включить, см. templates/MULTICRAFTER.md.
+#
+# Здесь три рецепта, повторяющие уже существующие блоки мода, чтобы было видно, как переносятся числа:
+#   Beryllium Bombardment Chamber, Nitrogen Converter и Oxygen Synthesizer.
+# Числа в input/output такие же, как в consumes/outputLiquid обычных JSON-блоков:
+#   items    - количество предметов за ОДИН цикл (craftTime тиков)
+#   liquids  - количество жидкости за ТИК (в игре показывается x60 в секунду)
+#   power    - энергия за ТИК (в игре показывается x60 в секунду)
+#=====================================================================================================#
+
+# Обязательно: делает блок мульти-крафтером.
+type: MultiCrafter
+
+# Любые обычные поля блока, как в остальных файлах мода.
+size: 4
+health: 1500
+itemCapacity: 40
+liquidCapacity: 80
+
+# ВАЖНО: поле называется jsonRecipes. Поле recipes в JSON не работает (оно только для Java-модов).
+jsonRecipes: [
+    {
+        # Уникальное имя рецепта. Библиотека сама добавит к нему префикс мода: termoatom-be-to-graphite.
+        name: be-to-graphite
+        craftTime: 90
+        input: {
+            items: ["beryllium/3"]
+            liquids: ["helium/0.5"]
+            power: 10
+        }
+        output: {
+            items: ["graphite/3"]
+        }
+        # Рецепт доступен сразу, как только открыт сам блок.
+        alwaysUnlocked: true
+    }
+    {
+        name: graphite-to-nitrogen
+        craftTime: 60
+        input: {
+            items: ["graphite/1"]
+            liquids: ["hydrogen/0.2"]
+            power: 5
+        }
+        output: {
+            liquids: ["nitrogen/0.25"]
+        }
+        alwaysUnlocked: true
+    }
+    {
+        name: nitrogen-to-ozone
+        craftTime: 50
+        input: {
+            liquids: ["nitrogen/0.2", "hydrogen/0.1"]
+            power: 4
+        }
+        output: {
+            liquids: ["ozone/0.25"]
+        }
+
+        # Этот рецепт закрыт, пока игрок не исследует его. Родитель должен быть в дереве исследований.
+        unlocked: false
+        research: {
+            parent: helium-extractor
+            requirements: ["beryllium/300", "silicon/250", "carbide/200", "oxide/100"]
+        }
+    }
+]
+
+# Дальше обычные поля блока.
+requirements: ["beryllium/400", "silicon/300", "carbide/200", "oxide/100"]
+category: "crafting"
+
+# Исследование самого блока, как у остальных блоков мода.
+research: {
+    parent: helium-extractor
+    requirements: ["beryllium/600", "silicon/500", "carbide/400", "oxide/200"]
+}
