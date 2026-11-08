@@ -13,17 +13,18 @@
     "drillTime": 12000,
     "rotateSpeed": 6,
     "liquidBoostIntensity": 18,
+    "warmupSpeed": 0.003,
 
     "hasPower": true,
     "hasLiquids": true,
-    "liquidCapacity": 120,
+    "liquidCapacity": 600,
     "itemCapacity": 60,
 
     "consumes": {
         "power": 7,
         "liquid": {
             "liquid": "helium",
-            "amount": 2,
+            "amount": 12,
             "booster": true,
             "optional": true
         }
